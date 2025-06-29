@@ -35,15 +35,14 @@ npm install -g @expo/cli
     expo upgrade
     ```
 
-4. Retire `"react-test-renderer": "18.2.0",` do `package.json`
-   ele apresenta um conflito com o React 19.0.0
+4. Retire `"react-test-renderer": "18.2.0",` do `package.json` pois ele apresenta um conflito com o React 19.0.0
 
     ```js
     {
-    "devDependencies"{
-    "react-test-renderer": "18.2.0"
-    // delete a linha a cima
-    }
+        "devDependencies"{
+            "react-test-renderer": "18.2.0"
+            // delete a linha a cima
+        }
     }
     ```
 
@@ -66,15 +65,15 @@ npm install -g @expo/cli
 
     ```js
     {
-    "expo": {
-    // adcione a seção entre os comentários
-    "sdkVersion": "53.0.0" , 
-    "runtimeVersion" : {
-    "policy": "sdkVersion"
-    },
-    "newArchEnabled": false,
-    // 
-    }
+        "expo": {
+            // adicione a seção entre os comentários
+            "sdkVersion": "53.0.0" , 
+            "runtimeVersion" : {
+                "policy": "sdkVersion"
+            },
+            "newArchEnabled": false,
+            // 
+        }
     }
     ```
 
@@ -84,7 +83,7 @@ npm install -g @expo/cli
     // não usar o inexistente package.json:exports
     config.resolver.unstable_enablePackageExports = false;
 
-    // adcione a linha acima
+    // adicione a linha acima
     module.exports = withNativeWind(config, { input: './global.css' })
     ```
 
@@ -134,9 +133,15 @@ npm install -g @expo/cli
     yarn expo start
     ```
 
+
 Creio que esses foram todos os passos que eu para atualizar diretamente do SDK 49 para o 53
+
 Também rodei `npx expo-doctor` algumas vezes mas creio não ser estritamente necessário
+
 Em grande parte o que o Jacques instruiu na atividade no teams foi o suficiente
+
 E também o projeto simplesmente não usa a nova arquitetura do React
+
 mas é isso
+
 Valeu ^^
