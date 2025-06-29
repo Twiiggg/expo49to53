@@ -1,12 +1,13 @@
-# firebasechat
+# Chat Firebase
 
 Uma aplicação móvel desenvolvida com React Native, Expo, Firebase e NativeWind.
+(Agradeço ao Jacques pelas instruções de como fazer a atividade)
 
 ## Tecnologias Utilizadas
 
 - **React Native** - Framework para desenvolvimento mobile
 - **Expo** - Plataforma para desenvolvimento React Native
-- **Firebase** - Backend as a Service (autenticação, banco de dados, storage)
+- **Firebase** - Backend as a Service (autenticação, banco de dados, armazenamento)
 - **NativeWind** - Framework CSS utilitário para React Native
 
 ## Pré-requisitos
@@ -24,49 +25,29 @@ npm install -g @expo/cli
 ## Instalação
 
 1. **Clone o repositório**
-```bash
-git clone https://github.com/seu-usuario/nome-do-projeto.git
-cd nome-do-projeto
-```
+
+    ```bash
+    git clone https://github.com/Twiiggg/chatFirebase49to53
+    cd chatFirebase49to53
+    ```
 
 2. **Instale as dependências**
-```bash
-npm install
-# ou
-yarn install
-```
 
-3. **Instale as dependências específicas do projeto**
-
-### Firebase
-```bash
-npm install firebase
-# ou
-yarn add firebase
-```
-
-### NativeWind
-```bash
-npm install nativewind
-npm install --save-dev tailwindcss@3.3.2
-# ou
-yarn add nativewind
-yarn add --dev tailwindcss@3.3.2
-```
-
-### Dependências adicionais do Expo
-```bash
-npx expo install expo-dev-client
-# ou outras dependências específicas do seu projeto
-```
+  ```bash
+  npm install
+  # ou
+  yarn install
+  ```
 
 ## Configuração
 
 ### Firebase
+
 1. Crie um projeto no [Firebase Console](https://console.firebase.google.com/)
 2. Adicione uma aplicação web ao seu projeto
-3. Copie as credenciais de configuração
-4. Crie um arquivo `.env` na raiz do projeto:
+3. Na visão geral do projeto, crie a Authentication e Cloud Firestore do projeto
+4. Copie as credenciais de configuração
+5. Crie um arquivo `.env` na raiz do projeto:
 
 ```env
 EXPO_PUBLIC_FIREBASE_API_KEY=sua_api_key
@@ -77,48 +58,22 @@ EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=123456789
 EXPO_PUBLIC_FIREBASE_APP_ID=1:123456789:web:abcdef
 ```
 
-### NativeWind
-Certifique-se de que o arquivo `tailwind.config.js` está configurado:
-
-```javascript
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./App.{js,jsx,ts,tsx}", "./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
+Se faz isso para *não* ter que colocar seus dados do Firebase
 
 ## Executando o projeto
 
 1. **Inicie o servidor de desenvolvimento**
-```bash
-npx expo start
-# ou
-yarn expo start
-```
+
+    ```bash
+    npx expo start
+    # ou
+    yarn expo start
+    ```
 
 2. **Execute no dispositivo/emulador**
+
 - Para Android: Pressione `a` no terminal ou escaneie o QR code com o app Expo Go
 - Para iOS: Pressione `i` no terminal ou escaneie o QR code com a câmera do iPhone
-
-## Estrutura do Projeto
-
-```
-projeto/
-├── src/
-│   ├── components/     # Componentes reutilizáveis
-│   ├── app(app)/       # Telas da aplicação
-│   ├── utils/          # Funções utilitárias
-├── assets/             # Imagens e recursos
-├── .env                # Variáveis de ambiente
-├── app.json            # Configuração do Expo
-├── babel.config.js     # Configuração do Babel
-├── tailwind.config.js  # Configuração do TailwindCSS
-└── package.json        # Dependências do projeto
-```
 
 ## Funcionalidades Firebase
 
@@ -131,11 +86,8 @@ Este projeto utiliza NativeWind para estilização, que permite usar classes do 
 
 ```jsx
 <View className="flex-1 justify-center items-center bg-blue-500">
-  <Text className="text-white text-xl font-bold">
-    Hello NativeWind!
-  </Text>
+<Text className="text-white text-xl font-bold">
+Hello NativeWind!
+</Text>
 </View>
 ```
----
-
-**Qualquer dúvida entre em contato pelo Teams** 

@@ -1,0 +1,12 @@
+# default
+expo-env.d.ts
+nativewind-env.d.ts
+
+# dependencias
+node_modules/
+
+# arquivos locais de teste do expo
+.expo/
+
+# enviroment files
+.env

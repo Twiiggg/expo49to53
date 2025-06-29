@@ -10,13 +10,13 @@ import {getFirestore, collection} from 'firebase/firestore'
 // 3. create a web app and copy the firebseConfigs below 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBkvTVApVPah62TmOkLTnBZZImx73KAjWU",
-  authDomain: "chat-firebase-twiig.firebaseapp.com",
-  projectId: "chat-firebase-twiig",
-  storageBucket: "chat-firebase-twiig.firebasestorage.app",
-  messagingSenderId: "153556749805",
-  appId: "1:153556749805:web:cda71c232e47c17d2c6be4",
-  measurementId: "G-SWBE58R9KL"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 
 // Initialize Firebase

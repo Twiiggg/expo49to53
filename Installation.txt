@@ -3,5 +3,7 @@ Siga esses passos para executar o projeto:
 - habilite o provedor de autenticação de e-mail e senha na autenticação
 - crie o Firestore Database (modo de teste)
 - crie um aplicativo da web para o projeto e copie a configuração no arquivo firebaseConfig.js no diretório raiz
+- abra o terminal
 - execute "npm install"
-- execute "npm run start"
+- execute "npx expo start"
+- entre no expo go e escaneie o qrcode

@@ -1,8 +1,13 @@
 {
   "expo": {
-    "name": "firebase-chat",
-    "slug": "firebase-chat",
+    "name": "chat-firebase",
+    "slug": "chat-firebase",
     "version": "1.0.0",
+     "newArchEnabled": false,
+    "sdkVersion": "53.0.0",
+    "runtimeVersion":{
+      "policy": "sdkVersion"
+    },
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",

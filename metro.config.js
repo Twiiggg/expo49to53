@@ -8,4 +8,8 @@ const config = getDefaultConfig(__dirname, {
   isCSSEnabled: true,
 });
 
+// não usar o inexistente package.json:exports
+// como dito em https://docs.expo.dev/versions/v53.0.0/config/metro/#packagejsonexports no ultimo codeblock
+config.resolver.unstable_enablePackageExports = false;
+
 module.exports = withNativeWind(config, { input: './global.css' })
