@@ -49,7 +49,7 @@ npm install -g @expo/cli
 4. Copie as credenciais de configuração
 5. Crie um arquivo `.env` na raiz do projeto:
 
-```env
+```.env
 EXPO_PUBLIC_FIREBASE_API_KEY=sua_api_key
 EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN=seu_projeto.firebaseapp.com
 EXPO_PUBLIC_FIREBASE_PROJECT_ID=seu_projeto_id
@@ -59,6 +59,19 @@ EXPO_PUBLIC_FIREBASE_APP_ID=1:123456789:web:abcdef
 ```
 
 Se faz isso para *não* ter que colocar seus dados do Firebase
+
+Porém, caso o `.env` não funcionar, delete o `.env` e edite diretamente o `firebaseConfig.js`
+
+```js
+const firebaseConfig = {
+apiKey: "sua_api_key",
+authDomain: "seu_projeto.firebaseapp.com",
+projectId: "seu_projeto_id",
+storageBucket: "seu_projeto.appspot.com",
+messagingSenderId: "123456789",
+appId: "1:123456789:web:abcdef"
+};
+```
 
 ## Executando o projeto
 

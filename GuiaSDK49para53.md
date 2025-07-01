@@ -125,6 +125,20 @@ npm install -g @expo/cli
     EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID=A-BCDEF1234
     ```
 
+    - Caso o `.env` não funcionar, delete o `.env` e edite diretamente o `firebaseConfig.js`
+
+    ```js
+    const firebaseConfig = {
+    apiKey: "sua_api_key",
+    authDomain: "seu_projeto.firebaseapp.com",
+    projectId: "seu_projeto_id",
+    storageBucket: "seu_projeto.appspot.com",
+    messagingSenderId: "123456789",
+    appId: "1:123456789:web:abcdef",
+    measurementId: "A-BCDEF1234"
+    };
+    ```
+
 11. E então execute o projeto
 
     ```bash
