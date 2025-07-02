@@ -9,7 +9,7 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
 - [Expo CLI](https://docs.expo.dev/get-started/installation/)
 
 ```bash
-npm install -g @expo/cli
+npm install -g expo/cli
 ```
 
 ## Começando o guia
@@ -29,7 +29,7 @@ npm install -g @expo/cli
     yarn
     ```
 
-3. Atualize o expo usando a `@expo/cli`
+3. Atualize o expo usando a `expo/cli`
 
     ```bash
     expo upgrade
